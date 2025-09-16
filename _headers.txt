@@ -1,0 +1,29 @@
+/*
+  Content-Encoding: br
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+  X-Content-Type-Options: nosniff
+
+/*.wasm
+  Content-Type: application/wasm
+  Content-Encoding: br
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.data
+  Content-Type: application/octet-stream
+  Content-Encoding: br
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.js
+  Content-Type: application/javascript
+  Content-Encoding: br
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.json
+  Content-Type: application/json
+  Content-Encoding: br
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.html
+  Content-Type: text/html; charset=UTF-8
+  Cache-Control: public, max-age=0, must-revalidate

@@ -1,15 +1,30 @@
-/Build/*.js
-  Content-Type: application/javascript
-  Cache-Control: public, max-age=31536000, immutable
+# JavaScript (Brotli y Gzip)
+  /build/*.js
+    Content-Type: application/javascript
+    Content-Encoding: br
 
-/Build/*.wasm
-  Content-Type: application/wasm
-  Cache-Control: public, max-age=31536000, immutable
+  /build/*.js.gz
+    Content-Type: application/javascript
+    Content-Encoding: gzip
 
-/Build/*.data
-  Content-Type: application/octet-stream
-  Cache-Control: public, max-age=31536000, immutable
+# WebAssembly (Brotli y Gzip)
+  /build/*.wasm
+    Content-Type: application/wasm
+    Content-Encoding: br
 
-/Build/*.symbols.json
-  Content-Type: application/json
-  Cache-Control: public, max-age=31536000, immutable
+  /build/*.wasm.gz
+    Content-Type: application/wasm
+    Content-Encoding: gzip
+
+# Data files (Brotli y Gzip)
+  /build/*.data
+    Content-Type: application/octet-stream
+    Content-Encoding: br
+
+  /build/*.data.gz
+    Content-Type: application/octet-stream
+    Content-Encoding: gzip
+
+# Unity loader (normal JS, no compresión extra aquí)
+  /build/*.loader.js
+    Content-Type: application/javascript
